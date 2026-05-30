@@ -1,3 +1,4 @@
+""" Used as a storage to register and undo registration"""
 class Stack:
     def __init__(self):
         self.items = []
