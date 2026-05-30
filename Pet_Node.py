@@ -1,8 +1,12 @@
-class PetNode:
-    def __init__(self, pet_id, name, breed, owner, severity):
-        self.pet_id   = pet_id
-        self.name     = name
-        self.breed    = breed
-        self.owner    = owner
+class Pets:
+    def __init__(self, pet_id, pet_name, breed, owner_name, severity):
+        self.pet_id = pet_id
+        self.pet_name = pet_name
+        self.breed = breed
+        self.owner_name = owner_name
         self.severity = severity
-        self.next     = None
+
+class Node:
+    def __init__(self, pets):
+        self.pets = pets
+        self.next = None
